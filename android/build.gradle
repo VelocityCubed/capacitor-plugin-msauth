@@ -21,7 +21,7 @@ android {
     namespace "nl.recognize.msauthplugin.capacitorpluginmsauth"
     compileSdkVersion project.hasProperty('compileSdkVersion') ? rootProject.ext.compileSdkVersion : 33
     defaultConfig {
-        minSdkVersion project.hasProperty('minSdkVersion') ? rootProject.ext.minSdkVersion : 22
+        minSdkVersion 24
         targetSdkVersion project.hasProperty('targetSdkVersion') ? rootProject.ext.targetSdkVersion : 33
         versionCode 1
         versionName "1.0"
@@ -63,7 +63,7 @@ allprojects {
 dependencies {
     implementation project(':capacitor-android')
     implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
-    implementation "com.microsoft.identity.client:msal:4.9.0"
+    implementation "com.microsoft.identity.client:msal:5.4.2"
 
     testImplementation "org.json:json:20230227"
     testImplementation "org.mockito:mockito-inline:5.2.0"

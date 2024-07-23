@@ -7,6 +7,7 @@ export interface BaseOptions {
   knownAuthorities?: string[];
   keyHash?: string;
   brokerRedirectUriRegistered?: boolean;
+  redirectUri?: string;
 }
 
 export interface LoginOptions extends BaseOptions {
